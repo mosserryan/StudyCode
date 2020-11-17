@@ -1,24 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react'
+import ColorButton from './ColorButton';
+import Counter from './Counter';
+
+
 
 function App() {
+  
+//Brain Practice exercise while teaching myself hooks
+
+  const [greeting, setGreeting] = useState(0)
+  const [isAbove, setBool] = useState(false)
+  const [number, randomNumber] = useState(null)
+  const [color, randomColor] = useState('grey')
+
+
+  let counter = () => {
+      if( isAbove === true){
+      setGreeting(greeting - 1)
+        if(greeting <= 1) {
+          setBool(false)
+        }
+      } else if(isAbove === false) {
+        setGreeting(greeting + 1)
+        if(greeting >= 9) {
+          setBool(true)
+        }
+      }  
+  }
+
+  let randomNumberGenerator = () => {
+    return(Math.floor(Math.random() * 256)) 
+  }
+
+  let randomized = () => {
+    let results = `${randomNumberGenerator()}, ${randomNumberGenerator()}, ${randomNumberGenerator()}`
+    randomNumber(results)
+    randomColor(`rgb(${results})`)
+  }
+  
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Counter isAbove={isAbove} greeting={greeting} counter={counter}/>
+    <ColorButton color={color} number={number} randomized={randomized}/>
+    </>
   );
 }
 
