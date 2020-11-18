@@ -1,0 +1,14 @@
+.centerContent {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.buttonWidth {
+  min-width: 115px;
+}
+
+.inputFieldWidth {
+  width: 100px;
+}
