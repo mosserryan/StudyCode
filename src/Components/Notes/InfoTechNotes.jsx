@@ -133,6 +133,15 @@ function InfoTechNotes() {
             cotain different types of data that uses information provided to
             store in that specific field name.
           </li>
+          <p style={noteStyle}>
+            <u>USB Connectors (Universal Serial Bus USB)</u>
+          </p>
+          <li>Testing my commits.</li>
+          <li>
+            The table contain records(rows) and fields(columns). The columns
+            cotain different types of data that uses information provided to
+            store in that specific field name.
+          </li>
         </ul>
       </div>
     </>
