@@ -7,6 +7,7 @@ import CodingNotes from './Components/Notes/CodingNotes'
 import InfoTechNotes from './Components/Notes/InfoTechNotes'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Nav from './Nav'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
  
