@@ -93,6 +93,151 @@ function InfoTechNotes() {
             </Accordion.Collapse>
           </Card>
         </Accordion>
+        <Accordion>
+          <Card className="BIOS">
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                BIOS
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <ul>
+                  <li style={listPaddingTop}>
+                    The software used to start your computer (firmware).
+                  </li>
+                  <li style={listPaddingTop}>
+                    Accessed by hitting the Del, F1, F2, Crtl-S, or Ctrl-Alt-S
+                    keys during PC start up. (Depends on Motherboard)
+                  </li>
+                  <li style={listPaddingTop}>
+                    Initialzes CPU and memory, and builds the workspace.
+                  </li>
+                  <li style={listPaddingTop}>
+                    Power-On-Self-Test (POST) Will check for CPU and memory,
+                    look for display and keyboad etc. Looks for hardware
+                    connected. Once finished it looks for bootloaded on storage
+                    device to launch OS.
+                  </li>
+                </ul>
+                <div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
+                  <div style={{ paddingTop: "20px" }}>
+                    <Accordion>
+                      <Card className="ConfigurationComponentInformation">
+                        <Card.Header>
+                          <Accordion.Toggle
+                            as={Button}
+                            variant="link"
+                            eventKey="0"
+                          >
+                            Configuration Component Information
+                          </Accordion.Toggle>
+                        </Card.Header>
+                        <Accordion.Collapse eventKey="0">
+                          <Card.Body>
+                            <ul style={listPaddingTop}>
+                              <li>
+                                In the BIOS you can see memory that you have
+                                installed, the RAM modules. You’re able to view
+                                the memory modules that you’ve installed in your
+                                system. And you can confirm that the memory
+                                modules that are physically installed are able
+                                to be seen by the BIOS.
+                              </li>
+                              <li>
+                                The BIOS can also tell you if you have installed
+                                a hard drive or an SSD into this computer and
+                                allows you to make changes as to which one of
+                                these devices will be used in what order during
+                                the boot process. The BIOS will also tell you if
+                                you have an optical drive installed, such as a
+                                CD Rom or a DVD Rom, and allows you to enable or
+                                disable that hardware. And of course, it will
+                                give you information about the CPU that’s
+                                installed in that system and tell you what type
+                                of CPU settings are configured in the BIOS
+                              </li>
+                              <li>
+                                Limited harware support, no drivers for modern
+                                network, video, and storage drivers.
+                              </li>
+                            </ul>
+                          </Card.Body>
+                        </Accordion.Collapse>
+                      </Card>
+                    </Accordion>
+                  </div>
+                  <div style={{ paddingTop: "20px" }}>
+                    <Accordion>
+                      <Card className="LegacyBIOS">
+                        <Card.Header>
+                          <Accordion.Toggle
+                            as={Button}
+                            variant="link"
+                            eventKey="0"
+                          >
+                            Legacy BIOS
+                          </Accordion.Toggle>
+                        </Card.Header>
+                        <Accordion.Collapse eventKey="0">
+                          <Card.Body>
+                            <ul style={listPaddingTop}>
+                              <li>Has been around for 25 years +</li>
+                              <li>
+                                Older opertaing systems talked to hardware
+                                through BIOS instead of accessing hardware
+                                directly.
+                              </li>
+                              <li>
+                                Limited harware support, no drivers for modern
+                                network, video, and storage drivers.
+                              </li>
+                            </ul>
+                          </Card.Body>
+                        </Accordion.Collapse>
+                      </Card>
+                    </Accordion>
+                  </div>
+                  <Accordion>
+                    <Card className="UEFIBIOS">
+                      <Card.Header>
+                        <Accordion.Toggle
+                          as={Button}
+                          variant="link"
+                          eventKey="0"
+                        >
+                          Unified Extensible Firmware Interface (UEFI) BIOS
+                        </Accordion.Toggle>
+                      </Card.Header>
+                      <Accordion.Collapse eventKey="0">
+                        <Card.Body>
+                          <ul style={listPaddingTop}>
+                            <li>Based on Intel's EFI BIOS</li>
+                            <li>
+                              A defined standard today, and is implemented by
+                              all manufactures instead of everyone making their
+                              own BIOS
+                            </li>
+                            <li>
+                              Includes a pre-boot environment. Which is not a
+                              OS, it has it's own shell, drivers and
+                              applications. Be able to browse the internet, back
+                              up a storage device. Remote diagnostics even
+                              without an OS
+                            </li>
+                            <li>
+                              Option for text based or graphical front end.
+                            </li>
+                          </ul>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </Card>
+                  </Accordion>
+                </div>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
 
         <Accordion>
           <Card className="BusArchitecture">
@@ -417,28 +562,19 @@ function InfoTechNotes() {
           </Card>
           <Card>
             <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                Expansion Slots
+              <Accordion.Toggle as={Button} variant="link" eventKey="10">
+                Flash Memory
               </Accordion.Toggle>
             </Card.Header>
-            <Accordion.Collapse eventKey="1">
+            <Accordion.Collapse eventKey="10">
               <Card.Body>
                 <ul>
                   <li>
-                    Enable the user to install plug-in adapter cards in a
-                    computer to extend the range of functions it can perform.
-                  </li>
-                  <li>
-                    A computer can support more than one type of expansion bus.
-                    An example of a multi bus design would be having support for
-                    PCI and PCI express for adding internal adapter cards, plus
-                    USB to allow for connection of peripherals.
-                  </li>
-                  <li>
-                    Riser Cards are used in cases that don't have enough space
-                    for a normal full height expansion card. Utilizing a riser
-                    card on these smaller cases allows for the user to connect
-                    additional adapters to the system to save more space.
+                    Flash memory is a non-volatile memory chip used for storage
+                    and for transfering data between a personal computer (PC)
+                    and digital devices. It has the ability to be electronically
+                    reprogrammed and erased. It is often found in USB flash
+                    drives, MP3 players, digital cameras and solid-state drives
                   </li>
                 </ul>
               </Card.Body>
@@ -446,28 +582,22 @@ function InfoTechNotes() {
           </Card>
           <Card>
             <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                Expansion Slots
+              <Accordion.Toggle as={Button} variant="link" eventKey="11">
+                The "CMOS" Battery
               </Accordion.Toggle>
             </Card.Header>
-            <Accordion.Collapse eventKey="1">
+            <Accordion.Collapse eventKey="11">
               <Card.Body>
                 <ul>
                   <li>
-                    Enable the user to install plug-in adapter cards in a
-                    computer to extend the range of functions it can perform.
+                    Not needed for today's flash-based storage of the BIOS. Used
+                    to be used for older BIOS configurations.
                   </li>
+                  <li>Now only used to maintain the date/time.</li>
                   <li>
-                    A computer can support more than one type of expansion bus.
-                    An example of a multi bus design would be having support for
-                    PCI and PCI express for adding internal adapter cards, plus
-                    USB to allow for connection of peripherals.
-                  </li>
-                  <li>
-                    Riser Cards are used in cases that don't have enough space
-                    for a normal full height expansion card. Utilizing a riser
-                    card on these smaller cases allows for the user to connect
-                    additional adapters to the system to save more space.
+                    If the CMOS battery power begins to run dry the computer
+                    will have a hard time mainitaing the date and time without
+                    having a source of power.
                   </li>
                 </ul>
               </Card.Body>
