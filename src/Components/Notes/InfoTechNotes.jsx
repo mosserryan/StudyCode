@@ -45,7 +45,8 @@ function InfoTechNotes() {
                     clock the CPU does one cycle of operations, when a voltage
                     is sent it is called a cycle of operations. The more data
                     that you need to process in a command the more clock cycles
-                    you need.
+                    you need. Has it's own instruction set which is just a list
+                    of instructions that the CPU is able to run.
                   </li>
                   <li style={listPaddingTop}>
                     <b>Random Access Memory (RAM)</b> Our computers short-term
