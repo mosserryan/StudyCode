@@ -94,6 +94,88 @@ function InfoTechNotes() {
           </Card>
         </Accordion>
         <Accordion>
+          <Card className="ComputerNetworks">
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                Computer Networks
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <ul>
+                  <li style={listPaddingTop}>
+                    <b>Local Area Network (LAN)</b>
+                    is a self-contained network that spans a small area such as
+                    a single floor or a small building. Cabling can generally
+                    connect all nodes in a LAN. A Local Area Network (LAN)
+                    router divides the network into multiple networks. This is
+                    useful for security and performance reasons.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Virtual Private Network (VPN)</b> is a secure tunnel
+                    through the public Internet that connects a remote user with
+                    a network.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Wide Area Network (WAN)</b> connects geographically
+                    diverse users using long-range transmission media. A WAN
+                    typically connects multiple LANs. A Wide Area Network (WAN)
+                    joins a network using one type of media with a network using
+                    another type of media. An example is to join a LAN to a WAN,
+                    such as the Internet.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Personal Area Network (PAN)</b> is a relatively new
+                    concept that refers to using wireless connectivity devices
+                    within a few meters.
+                  </li>
+                  <li style={listPaddingTop}>
+                    A Domain Name System (DNS) server translates Fully Qualified
+                    Domain Names (FQDNs) into Internet Protocol (IP) addresses.
+                    This makes network services available by allowing users to
+                    access resources on the network using the FQDN.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Ethernet Switch</b> replaces the functions of both a hub
+                    and a bridge on modern networks. Switches connect nodes
+                    together into a single network. The switch establishes a
+                    point-to-point link between any two nodes in a network.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Hub</b> an early type of device used to implement the
+                    Ethernet cabling design referred to as a star topology. A
+                    hub is a multiport repeater.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Router</b> is responsible for moving data around a
+                    network of networks, known as an internetwork or internet. A
+                    router forwards packets over the network, whereas a switch
+                    forwards frames.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Registers</b> Components inside of the CPU that allow the
+                    CPU to store data to work with. If the CPU was working with
+                    two numbers, one number would be stored in register "A"
+                    another in register "B" the result of both would be held in
+                    register "C".
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Memory Controller Chip (MCC)</b> The bridge between the
+                    CPU and RAM. The CPU will tell the MCC what it needs from
+                    the specified data held in the RAM. It will then send this
+                    data through the EDB to the CPU.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Cache</b> Smaller than RAM, but let's us store data that
+                    we use often. (3 levels of Cache; 1,2,3 smallest being the
+                    fastest)
+                  </li>
+                </ul>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
+        <Accordion>
           <Card className="BIOS">
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
@@ -118,6 +200,29 @@ function InfoTechNotes() {
                     look for display and keyboad etc. Looks for hardware
                     connected. Once finished it looks for bootloaded on storage
                     device to launch OS.
+                  </li>
+                  <li style={listPaddingTop}>
+                    Your BIOS can also help provide Full Disk Encryption on your
+                    computer. This is sometimes referred to as FDE, where
+                    everything that is written onto a disk, including the
+                    operating system, is completely encrypted. If someone gained
+                    access to one of your devices or tried to read information
+                    from your storage devices, they would find that all of that
+                    information was encrypted.
+                  </li>
+                  <li style={listPaddingTop}>
+                    In Windows, this full-disk encryption is called BitLocker.
+                    And BitLocker integrates with a TPM. This is a Trusted
+                    Platform Module. It’s a piece of hardware that’s inside of
+                    your computer, maybe a module that you add to a motherboard,
+                    or it might be built into the motherboard that you’re using.
+                    This TPM has a random number generator.
+                  </li>
+                  <li style={listPaddingTop}>
+                    It can help create cryptographic keys. And it has a number
+                    of other advanced cryptographic functions. This TPM
+                    integrates with the BIOS to provide the highest level of
+                    security for your data.
                   </li>
                 </ul>
                 <div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
@@ -167,37 +272,34 @@ function InfoTechNotes() {
                       </Card>
                     </Accordion>
                   </div>
-                  <div style={{ paddingTop: "20px" }}>
-                    <Accordion>
-                      <Card className="LegacyBIOS">
-                        <Card.Header>
-                          <Accordion.Toggle
-                            as={Button}
-                            variant="link"
-                            eventKey="0"
-                          >
-                            Legacy BIOS
-                          </Accordion.Toggle>
-                        </Card.Header>
-                        <Accordion.Collapse eventKey="0">
-                          <Card.Body>
-                            <ul style={listPaddingTop}>
-                              <li>Has been around for 25 years +</li>
-                              <li>
-                                Older opertaing systems talked to hardware
-                                through BIOS instead of accessing hardware
-                                directly.
-                              </li>
-                              <li>
-                                Limited harware support, no drivers for modern
-                                network, video, and storage drivers.
-                              </li>
-                            </ul>
-                          </Card.Body>
-                        </Accordion.Collapse>
-                      </Card>
-                    </Accordion>
-                  </div>
+                  <Accordion>
+                    <Card className="LegacyBIOS">
+                      <Card.Header>
+                        <Accordion.Toggle
+                          as={Button}
+                          variant="link"
+                          eventKey="0"
+                        >
+                          Legacy BIOS
+                        </Accordion.Toggle>
+                      </Card.Header>
+                      <Accordion.Collapse eventKey="0">
+                        <Card.Body>
+                          <ul style={listPaddingTop}>
+                            <li>Has been around for 25 years +</li>
+                            <li>
+                              Older opertaing systems talked to hardware through
+                              BIOS instead of accessing hardware directly.
+                            </li>
+                            <li>
+                              Limited harware support, no drivers for modern
+                              network, video, and storage drivers.
+                            </li>
+                          </ul>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </Card>
+                  </Accordion>
                   <Accordion>
                     <Card className="UEFIBIOS">
                       <Card.Header>
