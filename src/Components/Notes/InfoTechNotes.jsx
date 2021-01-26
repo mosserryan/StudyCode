@@ -45,7 +45,8 @@ function InfoTechNotes() {
                     clock the CPU does one cycle of operations, when a voltage
                     is sent it is called a cycle of operations. The more data
                     that you need to process in a command the more clock cycles
-                    you need.
+                    you need. Has it's own instruction set which is just a list
+                    of instructions that the CPU is able to run.
                   </li>
                   <li style={listPaddingTop}>
                     <b>Random Access Memory (RAM)</b> Our computers short-term
@@ -88,6 +89,253 @@ function InfoTechNotes() {
                     fastest)
                   </li>
                 </ul>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
+        <Accordion>
+          <Card className="ComputerNetworks">
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                Computer Networks
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <ul>
+                  <li style={listPaddingTop}>
+                    <b>Local Area Network (LAN)</b>
+                    is a self-contained network that spans a small area such as
+                    a single floor or a small building. Cabling can generally
+                    connect all nodes in a LAN. A Local Area Network (LAN)
+                    router divides the network into multiple networks. This is
+                    useful for security and performance reasons.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Virtual Private Network (VPN)</b> is a secure tunnel
+                    through the public Internet that connects a remote user with
+                    a network.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Wide Area Network (WAN)</b> connects geographically
+                    diverse users using long-range transmission media. A WAN
+                    typically connects multiple LANs. A Wide Area Network (WAN)
+                    joins a network using one type of media with a network using
+                    another type of media. An example is to join a LAN to a WAN,
+                    such as the Internet.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Personal Area Network (PAN)</b> is a relatively new
+                    concept that refers to using wireless connectivity devices
+                    within a few meters.
+                  </li>
+                  <li style={listPaddingTop}>
+                    A Domain Name System (DNS) server translates Fully Qualified
+                    Domain Names (FQDNs) into Internet Protocol (IP) addresses.
+                    This makes network services available by allowing users to
+                    access resources on the network using the FQDN.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Ethernet Switch</b> replaces the functions of both a hub
+                    and a bridge on modern networks. Switches connect nodes
+                    together into a single network. The switch establishes a
+                    point-to-point link between any two nodes in a network.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Hub</b> an early type of device used to implement the
+                    Ethernet cabling design referred to as a star topology. A
+                    hub is a multiport repeater.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Router</b> is responsible for moving data around a
+                    network of networks, known as an internetwork or internet. A
+                    router forwards packets over the network, whereas a switch
+                    forwards frames.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Registers</b> Components inside of the CPU that allow the
+                    CPU to store data to work with. If the CPU was working with
+                    two numbers, one number would be stored in register "A"
+                    another in register "B" the result of both would be held in
+                    register "C".
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Memory Controller Chip (MCC)</b> The bridge between the
+                    CPU and RAM. The CPU will tell the MCC what it needs from
+                    the specified data held in the RAM. It will then send this
+                    data through the EDB to the CPU.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Cache</b> Smaller than RAM, but let's us store data that
+                    we use often. (3 levels of Cache; 1,2,3 smallest being the
+                    fastest)
+                  </li>
+                </ul>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
+        <Accordion>
+          <Card className="BIOS">
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                BIOS
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <ul>
+                  <li style={listPaddingTop}>
+                    The software used to start your computer (firmware).
+                  </li>
+                  <li style={listPaddingTop}>
+                    Accessed by hitting the Del, F1, F2, Crtl-S, or Ctrl-Alt-S
+                    keys during PC start up. (Depends on Motherboard)
+                  </li>
+                  <li style={listPaddingTop}>
+                    Initialzes CPU and memory, and builds the workspace.
+                  </li>
+                  <li style={listPaddingTop}>
+                    Power-On-Self-Test (POST) Will check for CPU and memory,
+                    look for display and keyboad etc. Looks for hardware
+                    connected. Once finished it looks for bootloaded on storage
+                    device to launch OS.
+                  </li>
+                  <li style={listPaddingTop}>
+                    Your BIOS can also help provide Full Disk Encryption on your
+                    computer. This is sometimes referred to as FDE, where
+                    everything that is written onto a disk, including the
+                    operating system, is completely encrypted. If someone gained
+                    access to one of your devices or tried to read information
+                    from your storage devices, they would find that all of that
+                    information was encrypted.
+                  </li>
+                  <li style={listPaddingTop}>
+                    In Windows, this full-disk encryption is called BitLocker.
+                    And BitLocker integrates with a TPM. This is a Trusted
+                    Platform Module. It’s a piece of hardware that’s inside of
+                    your computer, maybe a module that you add to a motherboard,
+                    or it might be built into the motherboard that you’re using.
+                    This TPM has a random number generator.
+                  </li>
+                  <li style={listPaddingTop}>
+                    It can help create cryptographic keys. And it has a number
+                    of other advanced cryptographic functions. This TPM
+                    integrates with the BIOS to provide the highest level of
+                    security for your data.
+                  </li>
+                </ul>
+                <div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
+                  <div style={{ paddingTop: "20px" }}>
+                    <Accordion>
+                      <Card className="ConfigurationComponentInformation">
+                        <Card.Header>
+                          <Accordion.Toggle
+                            as={Button}
+                            variant="link"
+                            eventKey="0"
+                          >
+                            Configuration Component Information
+                          </Accordion.Toggle>
+                        </Card.Header>
+                        <Accordion.Collapse eventKey="0">
+                          <Card.Body>
+                            <ul style={listPaddingTop}>
+                              <li>
+                                In the BIOS you can see memory that you have
+                                installed, the RAM modules. You’re able to view
+                                the memory modules that you’ve installed in your
+                                system. And you can confirm that the memory
+                                modules that are physically installed are able
+                                to be seen by the BIOS.
+                              </li>
+                              <li>
+                                The BIOS can also tell you if you have installed
+                                a hard drive or an SSD into this computer and
+                                allows you to make changes as to which one of
+                                these devices will be used in what order during
+                                the boot process. The BIOS will also tell you if
+                                you have an optical drive installed, such as a
+                                CD Rom or a DVD Rom, and allows you to enable or
+                                disable that hardware. And of course, it will
+                                give you information about the CPU that’s
+                                installed in that system and tell you what type
+                                of CPU settings are configured in the BIOS
+                              </li>
+                              <li>
+                                Limited harware support, no drivers for modern
+                                network, video, and storage drivers.
+                              </li>
+                            </ul>
+                          </Card.Body>
+                        </Accordion.Collapse>
+                      </Card>
+                    </Accordion>
+                  </div>
+                  <Accordion>
+                    <Card className="LegacyBIOS">
+                      <Card.Header>
+                        <Accordion.Toggle
+                          as={Button}
+                          variant="link"
+                          eventKey="0"
+                        >
+                          Legacy BIOS
+                        </Accordion.Toggle>
+                      </Card.Header>
+                      <Accordion.Collapse eventKey="0">
+                        <Card.Body>
+                          <ul style={listPaddingTop}>
+                            <li>Has been around for 25 years +</li>
+                            <li>
+                              Older opertaing systems talked to hardware through
+                              BIOS instead of accessing hardware directly.
+                            </li>
+                            <li>
+                              Limited harware support, no drivers for modern
+                              network, video, and storage drivers.
+                            </li>
+                          </ul>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </Card>
+                  </Accordion>
+                  <Accordion>
+                    <Card className="UEFIBIOS">
+                      <Card.Header>
+                        <Accordion.Toggle
+                          as={Button}
+                          variant="link"
+                          eventKey="0"
+                        >
+                          Unified Extensible Firmware Interface (UEFI) BIOS
+                        </Accordion.Toggle>
+                      </Card.Header>
+                      <Accordion.Collapse eventKey="0">
+                        <Card.Body>
+                          <ul style={listPaddingTop}>
+                            <li>Based on Intel's EFI BIOS</li>
+                            <li>
+                              A defined standard today, and is implemented by
+                              all manufactures instead of everyone making their
+                              own BIOS
+                            </li>
+                            <li>
+                              Includes a pre-boot environment. Which is not a
+                              OS, it has it's own shell, drivers and
+                              applications. Be able to browse the internet, back
+                              up a storage device. Remote diagnostics even
+                              without an OS
+                            </li>
+                            <li>
+                              Option for text based or graphical front end.
+                            </li>
+                          </ul>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </Card>
+                  </Accordion>
+                </div>
               </Card.Body>
             </Accordion.Collapse>
           </Card>
@@ -416,28 +664,19 @@ function InfoTechNotes() {
           </Card>
           <Card>
             <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                Expansion Slots
+              <Accordion.Toggle as={Button} variant="link" eventKey="10">
+                Flash Memory
               </Accordion.Toggle>
             </Card.Header>
-            <Accordion.Collapse eventKey="1">
+            <Accordion.Collapse eventKey="10">
               <Card.Body>
                 <ul>
                   <li>
-                    Enable the user to install plug-in adapter cards in a
-                    computer to extend the range of functions it can perform.
-                  </li>
-                  <li>
-                    A computer can support more than one type of expansion bus.
-                    An example of a multi bus design would be having support for
-                    PCI and PCI express for adding internal adapter cards, plus
-                    USB to allow for connection of peripherals.
-                  </li>
-                  <li>
-                    Riser Cards are used in cases that don't have enough space
-                    for a normal full height expansion card. Utilizing a riser
-                    card on these smaller cases allows for the user to connect
-                    additional adapters to the system to save more space.
+                    Flash memory is a non-volatile memory chip used for storage
+                    and for transfering data between a personal computer (PC)
+                    and digital devices. It has the ability to be electronically
+                    reprogrammed and erased. It is often found in USB flash
+                    drives, MP3 players, digital cameras and solid-state drives
                   </li>
                 </ul>
               </Card.Body>
@@ -445,28 +684,22 @@ function InfoTechNotes() {
           </Card>
           <Card>
             <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                Expansion Slots
+              <Accordion.Toggle as={Button} variant="link" eventKey="11">
+                The "CMOS" Battery
               </Accordion.Toggle>
             </Card.Header>
-            <Accordion.Collapse eventKey="1">
+            <Accordion.Collapse eventKey="11">
               <Card.Body>
                 <ul>
                   <li>
-                    Enable the user to install plug-in adapter cards in a
-                    computer to extend the range of functions it can perform.
+                    Not needed for today's flash-based storage of the BIOS. Used
+                    to be used for older BIOS configurations.
                   </li>
+                  <li>Now only used to maintain the date/time.</li>
                   <li>
-                    A computer can support more than one type of expansion bus.
-                    An example of a multi bus design would be having support for
-                    PCI and PCI express for adding internal adapter cards, plus
-                    USB to allow for connection of peripherals.
-                  </li>
-                  <li>
-                    Riser Cards are used in cases that don't have enough space
-                    for a normal full height expansion card. Utilizing a riser
-                    card on these smaller cases allows for the user to connect
-                    additional adapters to the system to save more space.
+                    If the CMOS battery power begins to run dry the computer
+                    will have a hard time mainitaing the date and time without
+                    having a source of power.
                   </li>
                 </ul>
               </Card.Body>
