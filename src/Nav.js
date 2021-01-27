@@ -20,6 +20,9 @@ return (
             <Link to="/infotechnotes">
             <li>Information Technology Notes</li>
             </Link>           
+            <Link to="/infotechquiz">
+            <li>Information Technology Quiz</li>
+            </Link>           
         </ul>
     </nav>
 )
