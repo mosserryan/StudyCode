@@ -46,7 +46,10 @@ function InfoTechNotes() {
                     is sent it is called a cycle of operations. The more data
                     that you need to process in a command the more clock cycles
                     you need. Has it's own instruction set which is just a list
-                    of instructions that the CPU is able to run.
+                    of instructions that the CPU is able to run. Note: Dual core
+                    processors allow the cpu to run more efficiently by having
+                    double the processing power. Hyperthreading can even double
+                    that.
                   </li>
                   <li style={listPaddingTop}>
                     <b>Random Access Memory (RAM)</b> Our computers short-term
@@ -112,6 +115,20 @@ function InfoTechNotes() {
                     useful for security and performance reasons.
                   </li>
                   <li style={listPaddingTop}>
+                    <b>Modem</b>
+                    job is to translate analog signals into digital signals-and
+                    digital signals into analog signals. Analog is a smooth and
+                    continous signal that represents physical measurements
+                    (Colors we see, heat we feel, sounds we makes and hear).
+                    Digital signals are time separated signals which are
+                    generated using digital modulation. Digital uses 0 and 1 to
+                    represent information Up/On is 1 and 0 is down/off.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Router</b>
+                    can forward or "route" data between logical networks
+                  </li>
+                  <li style={listPaddingTop}>
                     <b>Virtual Private Network (VPN)</b> is a secure tunnel
                     through the public Internet that connects a remote user with
                     a network.
@@ -169,6 +186,16 @@ function InfoTechNotes() {
                     <b>Cache</b> Smaller than RAM, but let's us store data that
                     we use often. (3 levels of Cache; 1,2,3 smallest being the
                     fastest)
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Global System for Mobile Communication (GSM)</b> works
+                    with a Subscriber Identification Module (SIM) to contain the
+                    inofrmation needed to connect to the newwork.
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Code Division Multiple Access (CMDA)</b> Locks the
+                    hansdset to the original provider and does require a SIM
+                    card.
                   </li>
                 </ul>
               </Card.Body>
@@ -700,6 +727,153 @@ function InfoTechNotes() {
                     If the CMOS battery power begins to run dry the computer
                     will have a hard time mainitaing the date and time without
                     having a source of power.
+                  </li>
+                </ul>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
+
+        <Accordion>
+          <Card className="Measurements">
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                Data Measurements
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <ul>
+                  <li style={listPaddingTop}>
+                    <b>bit = b, bit per second = bps</b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>byte = B, byte per second = B/s</b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Kilobit = Kb, Kilobit per second = Kbps</b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Kilobyte = MB, Kilobyte per second = KB/s</b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Megabit = Mb, Megabit per second = Mbps</b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Megabyte = MB, Megabyte per second = MB/s</b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Gigabit = Gb, Gigabit per second = Gbps</b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>Gigabyte = GB, Gigabyte per second = GB/s</b>
+                  </li>
+                </ul>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
+        <Accordion>
+          <Card className="Measurements">
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                Electrical Measurements
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <ul>
+                  <li style={listPaddingTop}>
+                    <b>
+                      Watts is the rate at which electricity is drawn from the
+                      supply
+                    </b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>
+                      Energy is the amount of power consumed by a device over
+                      time measued in Kilowatt-hours.
+                    </b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>
+                      Voltage (V) is the potential difference between to point
+                      measured in volts. Like pressure in a water pipe. More
+                      voltage means more flow of electrons which creates more
+                      energy for whatever device it's used in.
+                    </b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>
+                      Energy is the amount of power consumed by a device over
+                      time measued in Kilowatt-hours.
+                    </b>
+                  </li>
+                  <li style={listPaddingTop}>
+                    <b>
+                      Curennt is the flow of electrons. Current is a result of
+                      how much voltage is being used.
+                    </b>
+                  </li>
+                </ul>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
+        <Accordion>
+          <Card className="Ports">
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                TCP Ports
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <ul>
+                  <li style={listPaddingTop}>
+                    Port 80 is the TCP (Transport Control Protocol) port used
+                    for web pages that use Hyper Text Transfer Protocol. TCP
+                    ensures reliable data deliver so that packets arrive error
+                    free and without loss.
+                  </li>
+                  <li style={listPaddingTop}>
+                    Port 143 is the TCP port used for imap4 (Internet Mail
+                    Access Protocol) enabling a user's email program (Outlook,
+                    for example) to access the mail server.
+                  </li>
+                  <li style={listPaddingTop}>
+                    Port 389 is the TCP port use for ldap (Lightweight Directory
+                    Access Protocol) which enables the user to locate
+                    organizations, individuals, files, and devices in a network.
+                  </li>
+                  <li style={listPaddingTop}>Https uses TCP port 443.</li>
+                  <li style={listPaddingTop}>
+                    Port 445 is used for smb (Server Message Block/Common
+                    Internet File System).
+                  </li>
+                </ul>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
+        <Accordion>
+          <Card className="Hypervisor">
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                Hypervisor
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <ul>
+                  <li style={listPaddingTop}>
+                    <b>Hypervisor</b>
+                    Assigning resources to each guest operating system Emulating
+                    and facilitating access to resources like the CPU (Central
+                    Processing Unit) and memory for each guest operating system.
+                    Configuring security to make sure that guest operating
+                    systems cannot access each other except through authorized
+                    mechanisms
                   </li>
                 </ul>
               </Card.Body>
